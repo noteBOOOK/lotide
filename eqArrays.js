@@ -15,7 +15,11 @@ const eqArrays = function(firstArray, secondArray) {
       comparison.push("false");
     }
   }
-  if (comparison.includes("false")) {
+  return trueOrFalse(comparison)
+};
+
+const trueOrFalse = function (results) {
+  if (results.includes("false")) {
     return false;
   } else {
     return true;
