@@ -28,7 +28,7 @@ const middle = function(listOfNumbers) {
       middleNums.push(listOfNumbers[Math.floor(midValue)]);
       return middleNums;
     } else {
-      middleNums.push(listOfNumbers[(midValue) - 1]);
+      middleNums.push(listOfNumbers[midValue - 1]);
       middleNums.push(listOfNumbers[midValue]);
       return middleNums;
     }
