@@ -1,8 +1,8 @@
 const assertArraysEqual = function(firstArray, secondArray) {
   if (eqArrays(firstArray, secondArray)) {
-    console.log(`✅✅✅ Assertion Passed: Both arrays are identical!`);
+    console.log(`✅✅✅ Assertion Passed: ${firstArray} === ${secondArray}`);
   } else {
-    console.log(`🛑🛑🛑 Assertion Failed: The arrays are different!`);
+    console.log(`🛑🛑🛑 Assertion Failed: ${firstArray} !== ${secondArray}`);
   }
 };
 
