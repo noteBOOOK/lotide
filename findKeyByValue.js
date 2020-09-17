@@ -10,6 +10,8 @@ const findKeyByValue = function(objectList, value) {
   for (let key in objectList) {
     if (objectList[key] === value) {
       return key;
+    } else {
+      return undefined;
     }
   }
 };
