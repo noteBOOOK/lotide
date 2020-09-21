@@ -13,7 +13,7 @@ describe("#tail", () => {
     assert.equal(result[0], 'Lighthouse');
   });
 
-  it("Should return 'Labs' as second element for ['Hello', 'Lighthouse', 'Labs']", () => {
-    assert.equal(result[1], 'Labs');
+  it("Should return the tail of the input", () => {
+    assert.deepEqual(result, ['Lighthouse', 'Labs']);
   });
 });
