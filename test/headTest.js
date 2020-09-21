@@ -1,5 +1,17 @@
 const head = require("../head.js");
-const assertEqual = require("../assertEqual");
+const assert = require("chai").assert;
 
-assertEqual(head("hello"), "h");
-assertEqual(head("superman"), "s");
+describe("#head", () => {
+  it("Should return 1 for [1, 2, 3]", () => {
+    assert.strictEqual(head[1, 2, 3]);
+  });
+  it("Should return '5' for ['5']", () => {
+    assert.strictEqual(head(['5']), '5');
+  });
+});
+
+// const assertEqual = require("../assertEqual");
+
+// assertEqual(head("hello"), "h");
+// assertEqual(head("superman"), "s");
+
